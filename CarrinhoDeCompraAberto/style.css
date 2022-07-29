@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Proza+Libre&family=Satisfy&family=Spectral&display=swap');
+
 * { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
 }
 
     /* fundo da pagina */
@@ -12,7 +14,7 @@ body #primeiraDiv{
 }
 
 #fundo {
-    background-image: url(/CarrinhoDeCompraAberto/img/4.cc1b956720638b5d5b32.png);
+    background-image: url(/images/tela.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
@@ -24,27 +26,30 @@ body #primeiraDiv{
 .carrinho-aberto {
     grid-column: 4/5;
     grid-row: 1/4;
+    box-shadow: -4px 1px 17px 0px rgb(0 0 0 / 57%);
 }
 
     /* cabeçalho do carrinho */
 #titulo-carrinho {
-    background-color: #e496c0;
+    background-color: #efb9d6;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     height: 8vh;
+
 }
 
 #titulo-carrinho h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 #titulo-carrinho .seta {
     position: absolute;
     left: 1vh;
     font-size: 1.5rem;
-    background-color: #e496c0;
+    background-color: #efb9d6;
     border: none;
     color: black;
 }
@@ -90,6 +95,13 @@ body #primeiraDiv{
     padding-right: 0.4rem;
 }
 
+#produtos-busca {
+    background: rgb(255, 254, 254);
+    height: 81vh;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
 #produtos-do-carrinho {
     border-bottom: solid 1px #ccc;
     display: grid;
@@ -118,6 +130,7 @@ body #primeiraDiv{
     grid-row: 1/2;
     font-size: 0.9rem;
     font-weight: bold;
+    padding: 2%;
 }
 
 #produtos-do-carrinho .tamanho {
@@ -125,11 +138,13 @@ body #primeiraDiv{
     grid-row: 2/3;
     font-size: 0.7rem;
     color: #a7a7a7;
+    padding: 2%;
 }
 
 .quantidades {
     justify-content: center;
     align-items: center;
+    padding: 2%;
 }
 
 #produtos-do-carrinho .menos {
@@ -139,7 +154,15 @@ body #primeiraDiv{
     justify-content: center;
     font-size: 0.7rem;
     border: 1px solid black;
+    padding: 3%;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+#produtos-do-carrinho .menos:hover {
+    background-color: #efb9d6;
+}
+
 #produtos-do-carrinho .mais {
     background-color: #fff;
     height: 3vh;
@@ -147,6 +170,13 @@ body #primeiraDiv{
     justify-content: center;
     font-size: 0.7rem;
     border: 1px solid black;
+    padding: 3%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#produtos-do-carrinho .mais:hover {
+    background-color: #efb9d6;
 }
 
 #produtos-do-carrinho .quantidade {
@@ -156,6 +186,7 @@ body #primeiraDiv{
     justify-content: center;
     font-size: 0.9rem;
     font-weight: bold;
+    padding: 3%;
 }
 
 #produtos-do-carrinho .preco {
@@ -163,6 +194,7 @@ body #primeiraDiv{
     grid-row: 1/2;
     font-size: 0.9rem;
     font-weight: bold;
+
 }
 
 #produtos-do-carrinho .parcela {
@@ -170,6 +202,7 @@ body #primeiraDiv{
     grid-row: 2/3;
     font-size: 0.7rem;
     color: #a7a7a7;
+
 }
 
     /* footer do carrinho */
@@ -191,6 +224,13 @@ body #primeiraDiv{
     box-shadow: 1px -1px 4px 0px rgba(0, 0, 0, 0.575);
     font-size: 1rem;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#subtotal button:hover {
+    background-color: rgba(0, 0, 0, 0.11);
+    color: black;
 }
 
 @media only screen and (max-width: 1000px) {
