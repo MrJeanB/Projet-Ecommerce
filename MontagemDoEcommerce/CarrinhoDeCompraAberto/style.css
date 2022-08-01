@@ -14,7 +14,7 @@ body #primeiraDiv{
 }
 
 #fundo {
-    background-image: url(/MontagemDoEcommerce/images/tela.png);
+    background-image: url(/MontagemDoEcommerce/home/images/tela.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
